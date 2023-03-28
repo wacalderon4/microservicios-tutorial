@@ -1,4 +1,4 @@
-package com.user.service.feignclients;
+package com.usuario.service.feignclients;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.user.service.modelos.Carro;
+import com.usuario.service.modelos.Carro;
 
 @FeignClient(name = "carro-service", url = "http://localhost:8002" )
 @RequestMapping("/carro")

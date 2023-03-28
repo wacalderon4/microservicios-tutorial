@@ -1,4 +1,4 @@
-package com.user.service.modelos;
+package com.usuario.service.modelos;
 
 public class Moto {
 	private String marca;

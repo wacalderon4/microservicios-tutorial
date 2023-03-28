@@ -1,4 +1,4 @@
-package com.user.service.controlador;
+package com.usuario.service.controlador;
 
 import java.util.List;
 import java.util.Map;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.user.service.entidades.Usuario;
-import com.user.service.modelos.Carro;
-import com.user.service.modelos.Moto;
-import com.user.service.servicio.UsuarioService;
+import com.usuario.service.entidades.Usuario;
+import com.usuario.service.modelos.Carro;
+import com.usuario.service.modelos.Moto;
+import com.usuario.service.servicio.UsuarioService;
 
 @RestController
 @RequestMapping("/usuario")
