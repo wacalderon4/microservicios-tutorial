@@ -14,6 +14,7 @@ import com.usuario.service.modelos.Moto;
 @FeignClient(name = "moto-service")
 @RequestMapping("/moto")
 public interface MotoFeignClient {
+	
 	@PostMapping()
 	public Moto save(@RequestBody Moto moto);
 	
