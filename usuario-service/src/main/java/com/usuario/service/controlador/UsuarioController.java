@@ -88,7 +88,7 @@ public class UsuarioController {
 		Moto nuevaMoto = usuarioService.saveMoto(usuarioId, moto);
 		return ResponseEntity.ok(nuevaMoto);
 	}
-	@CircuitBreaker(name = "todosCB", fallbackMethod = "fallBackSaveTodos")
+	@CircuitBreaker(name = "todosCB", fallbackMethod = "fallBackGetTodos")
 	@GetMapping ("/todos/{usuarioId}")
 	public ResponseEntity<Map<String, Object>> listarTodosLosVehiculos(@PathVariable("usuarioId") int usuarioId){
 		Map<String, Object> resultado = usuarioService.getUsuarioAndVehiculos(usuarioId);
